@@ -36,4 +36,4 @@ jquery.checkboxall/
 ```
 
 ## Demo site:
-http://neeed.us/plugins/jquery.checboxall/
+<a href="http://neeed.us/plugins/jquery.checboxall/" target="_blank">http://neeed.us/plugins/jquery.checboxall/</a>
