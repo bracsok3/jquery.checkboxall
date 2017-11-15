@@ -21,11 +21,12 @@
 			allSelector	=	'all';
 		}
 		
-		if ($('.' + allSelector).length) {
-			var	parent			=	this,
-				all				=	$('.' + allSelector),
+		var	parent	=	this;
+		
+		if ($('.' + allSelector, parent).length) {
+			var	all				=	$('.' + allSelector, parent),
 				checkbox		=	parent.find('input[type="checkbox"]'),
-				childCheckbox	=	checkbox.not('.' + allSelector);
+				childCheckbox	=	checkbox.not('.' + allSelector, parent);
 
 			return checkbox
 					.unbind('click')
