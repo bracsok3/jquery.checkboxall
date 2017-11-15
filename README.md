@@ -6,8 +6,8 @@
 ## Description
 
 The jquery.checkboxall extension turns on and off all input checkboxes in the container. If you enable or disable the first checkbox, in the same time the other checkboxes will works same than the first in the container.
-The first checkbox name is by default. This is required, otherwise the plugin will not work and your browser’s console will show error.
-You can use different class name, but you have to pass this to the function with the checkbox.
+The first checkbox name is by default (all). This is required, otherwise the plugin will not work and your browser’s console will show error.
+You can use different class name, but you have to pass this to the function.
 
 ## Method:
 $(selector).checkboxall();
