@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jquery.checkboxall plugin</title>
+<style>
+	html, body { margin:0; padding:0; }
+	.demo { padding:30px; }
+	.demo > div { padding:3px 0; }
+</style>
+</head>
+
+<body>
+	<div class="demo">
+		<h1>jquery.checkboxall v1.0</h1>
+		<h1>Description</h1>
+		<div>
+			<p>The jquery.checkboxall plugin turns all input checkboxes in the container. You can use the first checkbox at the same time 
+			enable/disable additional checkboxes for the container.</p>
+			<p>The first checkbox class name is by default: all. This is required, otherwise the plugin will not work and your browser will work 
+			console will indicate an error.</p>
+			<p>You can also use a different class name, but you must pass it to the checkboxall function.</p>
+		</div>
+		<h1>Method</h1>
+		<div>
+			$(selector).checkboxall(optional-class-name);
+		</div>
+		<h1>Example 1</h1>
+		<h3>Default settings</h3>
+		<div class="example1">
+			<div><input type="checkbox" name="selectall1" id="selectall1" class="all" value="1"> <label for="selectall1">Select all</label></div>
+			<div><input type="checkbox" name="check[]" id="check1" value="1"> <label for="check1">1. checkbox</label></div>
+			<div><input type="checkbox" name="check[]" id="check2" value="2"> <label for="check2">2. checkbox</label></div>
+			<div><input type="checkbox" name="check[]" id="check3" value="3"> <label for="check3">3. checkbox</label></div>
+			<div><input type="checkbox" name="check[]" id="check4" value="4"> <label for="check4">4. checkbox</label></div>
+		</div>
+		
+		<h1>Example 2</h1>
+		<h3>With optional class name</h3>
+		<div class="example2">
+			<div><input type="checkbox" name="selectall2" id="selectall2" class="optionalclassname" value="1"> <label for="selectall2">Select all</label></div>
+			<div><input type="checkbox" name="check[]" id="check5" value="1"> <label for="check5">1. checkbox</label></div>
+			<div><input type="checkbox" name="check[]" id="check6" value="2"> <label for="check6">2. checkbox</label></div>
+			<div><input type="checkbox" name="check[]" id="check7" value="3"> <label for="check7">3. checkbox</label></div>
+			<div><input type="checkbox" name="check[]" id="check8" value="4"> <label for="check8">4. checkbox</label></div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../jquery.checkboxall-1.0.min.js"></script>
+	<script>
+		$('.example1').checkboxall();
+		$('.example2').checkboxall('optionalclassname');
+	</script>
+</body>
+</html>
